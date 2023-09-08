@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -10,8 +12,8 @@
 
 .container {
   background-color: hsl(215.3,21%,15.9%);
-  width: 500px;
-  height: 500px;
+  width: 450px;
+  height: 450px;
   border-radius: 10%;
   display: flex;
   justify-content: center;
@@ -26,9 +28,28 @@
   justify-content: space-between;
 }
 
-.circle {
-  background-color:  hsl(213, 19%, 18%);
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
+h1 {
+  text-align: left;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 700;
+}
+
+p {
+  text-align: left;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: hsl(217, 12%, 63%);
+}
+
+@media screen and (max-width: 375px) { 
+  .container {
+    width: 350px;
+    border-radius: 1.2rem;
+  }
+
+  .row-wrap {
+    width: 85%;
+    height: 85%;
+  }
 }
