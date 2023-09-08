@@ -1,0 +1,16 @@
+.orange-btn {
+    letter-spacing: .5rem;
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 2rem;
+    border: none;
+    padding: .5rem;
+    font-size: medium;
+    font-weight: 700;
+    height: 50px;
+}
+
+.orange-btn:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}

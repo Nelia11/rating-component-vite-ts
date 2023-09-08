@@ -1,0 +1,9 @@
+.starred-circle {
+    background-color:  hsl(213, 19%, 18%);
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
