@@ -1,0 +1,34 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: hsl(215.3,21%,15.9%);
+  width: 500px;
+  height: 500px;
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row-wrap {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between;
+}
+
+.circle {
+  background-color:  hsl(213, 19%, 18%);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
