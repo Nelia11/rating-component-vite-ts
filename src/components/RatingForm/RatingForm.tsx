@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+import "./RatingForm.css";
 import DarkBox from '../DarkBox/DarkBox';
 import RatingRow from '../RatingRow/RatingRow'
 import StarredCircle from '../StarredCircle/StarredCircle';
@@ -13,7 +15,7 @@ const RatingForm = () => {
                 All feedback is appreciated to help us improve our offering!
             </p>
             <RatingRow />
-            <SubmitButton />
+            <Link to="/success"><SubmitButton /></Link>
       </DarkBox>
     );
 };
