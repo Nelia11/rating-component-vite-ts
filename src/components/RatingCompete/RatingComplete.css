@@ -1,0 +1,23 @@
+.centered-txt {
+    text-align: center;
+}
+
+.thank-you {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.rating-info {
+    background-color: var(--dark-blue);
+    height: 40px;
+    margin: 0 auto;
+    border-radius: 1.5rem;
+    display: grid;
+    place-items: center;
+}
+
+.rating-info p {
+    padding: 0 15px;
+    color: var(--gray-orange);
+    font-weight: 700;
+}

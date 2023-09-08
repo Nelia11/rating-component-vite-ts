@@ -1,5 +1,5 @@
 .circle {
-    background-color:  hsl(213, 19%, 18%);
+    background-color: var(--dark-blue);
     width: 55px;
     height: 55px;
     border-radius: 50%;
@@ -7,16 +7,16 @@
     font-family: 'Overpass', sans-serif;
     font-weight: 700;
     font-size: larger;
-    color: hsl(217, 12%, 63%);
+    color: var(--light-blue);
     transition: background-color 0.5 ease;
 }
 
 .circle:hover {
-    background-color: hsl(25, 97%, 53%);
-    color: hsl(0, 0%, 100%);
+    background-color: var(--orange);
+    color: var(--white);
 }
 
 .circle:focus {
-    background-color: hsl(216, 12%, 54%);
-    color: hsl(0, 0%, 100%);
+    background-color: var(--medium-grey);
+    color: var(--white);
 }

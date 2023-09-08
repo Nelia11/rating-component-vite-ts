@@ -1,7 +1,7 @@
 .orange-btn {
     letter-spacing: .5rem;
-    background-color: hsl(25, 97%, 53%);
-    color: hsl(0, 0%, 100%);
+    background-color: var(--orange);
+    color: var(--white);
     border-radius: 2rem;
     border: none;
     padding: .5rem;
@@ -11,6 +11,6 @@
 }
 
 .orange-btn:hover {
-    background-color: hsl(0, 0%, 100%);
-    color: hsl(25, 97%, 53%);
+    background-color: var(--white);
+    color: var(--orange);
 }
