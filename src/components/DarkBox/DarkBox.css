@@ -1,0 +1,29 @@
+.container {
+    background-color: var(--gray);
+    width: 450px;
+    height: 450px;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-wrap {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 375px) { 
+    .container {
+        width: 350px;
+        border-radius: 1.2rem;
+    }
+  
+    .row-wrap {
+        width: 85%;
+        height: 85%;
+    }
+}
