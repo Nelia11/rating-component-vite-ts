@@ -1,9 +1,11 @@
 import "./Circle.css";
-import { Props } from "../../interfaces/Interfaces";
+import { RatingProps } from "../../interfaces/Interfaces";
 
-const Circle = ({children}: Props) => {
+const Circle = ({children, handleRating}: RatingProps) => {
     return (
-        <button className="circle"
+        <button 
+            className="circle" 
+            onClick={() => handleRating()} 
         >
             {children}
         </button>
