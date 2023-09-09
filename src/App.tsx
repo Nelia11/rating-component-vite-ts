@@ -1,21 +1,22 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { useState } from 'react';
 import './App.css'
-import DarkBox from './components/DarkBox/DarkBox';
-import RatingRow from './components/RatingRow/RatingRow'
-import StarredCircle from './components/StarredCircle/StarredCircle';
-import SubmitButton from './components/UI/SubmitButton/SubmitButton';
+import RatingCompete from './pages/RatingCompete/RatingCompete';
+import RatingForm from './pages/RatingForm/RatingForm';
+import { RatingContext } from './context/RatingContext';
 
 function App() {
+    const [rating, setRating] = useState(0);
+    const handleRating = (idx: number) => setRating(idx);
   return (
-    <DarkBox>
-      <StarredCircle />
-      <h2>How did we do?</h2>
-      <p>
-        Please let us know how we did with your support request.
-        All feedback is appreciated to help us improve our offering!
-      </p>
-      <RatingRow />
-      <SubmitButton />
-    </DarkBox>
+    <Router>
+        <RatingContext.Provider value={rating}>
+          <Routes>
+            <Route path="/" element={<RatingForm handleRating={handleRating} />} />
+            <Route path="/success" element={<RatingCompete />} />
+          </Routes>
+        </RatingContext.Provider>
+      </Router>
   )
 }
 
